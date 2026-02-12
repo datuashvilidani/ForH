@@ -62,7 +62,7 @@ export default function Boxes() {
           <img
             src={box}
             alt="box"
-            className="animate-bounce mt-15 w-28 sm:w-40 md:w-44"
+            className="animate-bounce mt-18 w-28 sm:w-40 md:w-44"
           />
         </button>
       ))}

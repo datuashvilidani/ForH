@@ -1,6 +1,6 @@
 import { useState } from "react";
-import vid from "../assets/generated_video.mp4"
-import vid2 from "../assets/vid2.mp4"
+import gif1 from "../assets/gif1.gif"
+import gif2 from "../assets/gif2.gif"
 import { useNavigate } from "react-router-dom";
 
 export default function Question() {
@@ -34,15 +34,8 @@ export default function Question() {
     return (
         <div className="bg-[#E0E3ED] min-h-screen flex items-center justify-center">
             <div className="flex flex-col items-center px-6 text-center gap-6">
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    className="w-80 sm:w-[500px] rounded-2xl "
-                >
-                    <source src={vid} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                <img src={gif2} alt="" />
+
 
                 <h1 className="text-3xl sm:text-4xl font-bold italic">
                     will you be my valentine Halaboo?
@@ -65,15 +58,7 @@ export default function Question() {
                     </button>
                 </div>
 
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    className="w-80 sm:w-[500px] rounded-2xl"
-                >
-                    <source src={vid2} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                <img src={gif1} alt="" />
             </div>
         </div>
     );
